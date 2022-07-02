@@ -71,7 +71,7 @@ public Action:OnTakeDamage(victim, &attacker, &inflictor, &Float:damage, &damage
 					if(!yazildi)
 					{
 						PrintToChat(i," \x02[Caferly] \x04%s \x10İsimli Mahkum İsyan Başlattı.",isim);
-						PrintHintTextToAll("→ %s İsimli Mahkum İsyan Başlattı. ←");
+						PrintHintTextToAll("<font size='20' color='#8B0000'>%s </font><font size='20' color='#00FFFF'> %s</font> İsimli Oyuncuya Saldırarak<font size='20' color='#FFD700'> İsyan Başlattı.</font>", isim)								
 						yazildi = true
 						ClientCommand(i,"play *%s", g_Sesismi)
 						sil();
